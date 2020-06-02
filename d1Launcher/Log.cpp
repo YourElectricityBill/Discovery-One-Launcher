@@ -14,5 +14,6 @@ void Log::logInit()
 	m_clientLogger = spdlog::stdout_color_mt("CLIENT");
 	m_clientLogger->set_level(spdlog::level::trace);
 
+	LN_CORE_INFO("SpdLog initialized succesfully.");
 	Log::m_logInitialised = true;
 }
